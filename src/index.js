@@ -1,12 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import Frame from './lib/components/frame/'
+import Chat from './lib/components/chat/'
+import Input from './lib/components/input/'
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+ReactDOM.render(
+    <Frame>   
+      <Chat> aaa </Chat>
+      <Input> aaa </Input>
+    </Frame>,
+    document.querySelector('#root')
+  )
